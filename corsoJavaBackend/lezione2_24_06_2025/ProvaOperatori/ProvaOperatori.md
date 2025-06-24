@@ -1,0 +1,5 @@
+Una Classe in cui TESTIAMO GLI OPERATORI MATEMATICI, DI INCREMENTO , DI CONFRONTO e OPERATORI LOGICI
+MATEMATICI : +,-,\*,/,% ;
+INCREMENTO : ++ , -- ;
+CONFRONTO : <, >, <=, >=, ==, != ;
+LOGICI : && , || , !

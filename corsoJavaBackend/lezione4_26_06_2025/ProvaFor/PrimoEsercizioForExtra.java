@@ -45,12 +45,12 @@ public class PrimoEsercizioForExtra {
                     }
                 }
                 // variabili "condizionali"
-                boolean sufficente = voto >= 18 && voto < 24;
+                boolean sufficiente = voto >= 18 && voto < 24;
                 boolean ottimo = voto >= 24;
                 boolean insufficente = voto < 18;
                 // blocco condizionale che stampa il voto e
-                if (sufficente) {
-                    System.out.println(voto + " = Sufficente");
+                if (sufficiente) {
+                    System.out.println(voto + " = Sufficiente");
                 } else if (ottimo) {
                     System.out.println(voto + " = Ottimo");
                 } else if (insufficente) {
@@ -62,7 +62,7 @@ public class PrimoEsercizioForExtra {
             media = sommaVoti / numeroVotiDaInserire;
             System.out.println("La media dei voti di " + nomeStudente + " è uguale a " + media);
         }
-
+        scanner.close();
     }
 
 }

@@ -6,6 +6,7 @@ public class PrimoEsercizioFor {
     public static void main(String[] args) {
         // inizializzo un oggetto scanner per leggere gli imput dell'utente
         Scanner scanner = new Scanner(System.in);
+
         // chiedo a l'utente quanti voti vuole inserire
         System.out.println("Quanti voti vuoi inserire?");
         int numeroVotiDaInserire = scanner.nextInt();
@@ -35,18 +36,19 @@ public class PrimoEsercizioFor {
                 }
             }
             // variabili "condizionali"
-            boolean sufficente = voto >= 18 && voto < 24;
+            boolean sufficiente = voto >= 18 && voto < 24;
             boolean ottimo = voto >= 24;
             boolean insufficente = voto < 18;
             // blocco condizionale che stampa il voto e
-            if (sufficente) {
-                System.out.println(voto + " = Sufficente");
+            if (sufficiente) {
+                System.out.println(voto + " = Sufficiente");
             } else if (ottimo) {
                 System.out.println(voto + " = Ottimo");
             } else if (insufficente) {
                 System.out.println(voto + " = Insufficente");
             }
         }
+        scanner.close();
 
     }
 

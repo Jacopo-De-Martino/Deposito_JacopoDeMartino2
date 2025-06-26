@@ -16,6 +16,9 @@ public class ProvaFor {
             System.out.println(numero + " x " + i + " = " + (numero * i));
         }
         scanner.close(); // chiudo lo scanner per evitare perdite di risorse
+
+
+        
     }
 
 }

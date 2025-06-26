@@ -43,6 +43,41 @@ public class ProvaArray {
             }
             System.out.println("\n");
         }
+
+        // ESEMPIO MATRICE : RIEMPIMENTO E STAMPA , UTILIZZO CICLI FOR
+        // 3 array interni da 3 elementi
+        int[][] matriceGenerataDinamicamente = new int[3][3];
+        int valore = 1;
+        // Riempimento della matrice con numeri progressivi
+        for (int i = 0; i < matriceGenerataDinamicamente.length; i++) {
+            for (int j = 0; j < matriceGenerataDinamicamente[i].length; j++) {
+                matriceGenerataDinamicamente[i][j] = i * matrice[i].length + j + 1;/*
+                                                                                    * Metodo alternativo utilizzo
+                                                                                    * variabile valore
+                                                                                    * Riga 0:
+                                                                                    * i = 0, j = 0 → 0 * 3 + 0 + 1 = 1
+                                                                                    * i = 0, j = 1 → 0 * 3 + 1 + 1 = 2
+                                                                                    * i = 0, j = 2 → 0 * 3 + 2 + 1 = 3
+                                                                                    * 
+                                                                                    * Riga 1:
+                                                                                    * i = 1, j = 0 → 1 * 3 + 0 + 1 = 4
+                                                                                    * i = 1, j = 1 → 1 * 3 + 1 + 1 = 5
+                                                                                    * i = 1, j = 2 → 1 * 3 + 2 + 1 = 6
+                                                                                    * 
+                                                                                    * Riga 2:
+                                                                                    * i = 2, j = 0 → 2 * 3 + 0 + 1 = 7
+                                                                                    * i = 2, j = 1 → 2 * 3 + 1 + 1 = 8
+                                                                                    * i = 2, j = 2 → 2 * 3 + 2 + 1 = 9
+                                                                                    */
+            }
+        }
+        // Stampa matrice generata dinamicamente
+        for (int i = 0; i < matriceGenerataDinamicamente.length; i++) {
+            for (int j = 0; j < matriceGenerataDinamicamente[i].length; j++) {
+                System.out.print(matriceGenerataDinamicamente[i][j] + "\t");
+            }
+            System.out.println("\n");
+        }
     }
 
 }

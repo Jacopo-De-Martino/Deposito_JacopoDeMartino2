@@ -72,3 +72,11 @@ int, double Valore (copia) ❌ No ❌ No
 Array / Oggetti Riferimento (copia del puntatore) ✅ Sì (contenuto) ❌ No (riferimento)
 
 final per i metodi rende i metodi COSTANTI o meglio non modificabili.
+
+I Metodi sono funzioni legati una classe
+se sono statici li possiamo usare senza l'oggetto ma direttamente dalla classe stessa
+TIPI DI METODI
+
+- metodi senza ritorno e senza parametri(Eseguono solo istruzioni)
+- metodi con ritorno : restituiscono un valore
+- metodi con parametri : ricevono input da usare

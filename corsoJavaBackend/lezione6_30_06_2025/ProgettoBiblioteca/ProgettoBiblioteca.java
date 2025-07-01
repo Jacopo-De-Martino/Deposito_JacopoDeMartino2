@@ -1,16 +1,21 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// todo genstione più utenti e login per accedere alla biblioteca
+// todo gestione penalita per tempo di prestito scaduto
 class Book {
     // Attributi
     String title;
     String author;
     boolean isAvailable = true;
 
+    // Metodo per stampare le informazioni del libro
     void displayBookInfo() {
         System.out.println("Titolo :" + title + " Autore : " + author + " disponibile : " + isAvailable);
     }
 
+    // costruttore per inizializzare gli attributi title e author
+    // e impostare isAvailable a true
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
@@ -135,6 +140,7 @@ public class ProgettoBiblioteca {
 
             switch (scelta) {
                 case 1:
+                    // Aggiunta di un libro
                     System.out.print("Inserisci il titolo: ");
                     String titolo = scanner.nextLine();
                     System.out.print("Inserisci l'autore: ");
@@ -144,32 +150,38 @@ public class ProgettoBiblioteca {
                     break;
 
                 case 2:
+                    // Mostra tutti i libri
                     myLibrary.displayBookInfo();
                     break;
 
                 case 3:
+                    // Ricerca di un libro
                     System.out.print("Inserisci titolo o autore da cercare: ");
                     String keyword = scanner.nextLine();
                     myLibrary.search(keyword);
                     break;
 
                 case 4:
+                    // Prendere in prestito un libro
                     System.out.print("Titolo del libro da prendere in prestito: ");
                     String titoloPrestito = scanner.nextLine();
                     myLibrary.borrowBook(titoloPrestito, utente);
                     break;
 
                 case 5:
+                    // Restituire un libro
                     System.out.print("Titolo del libro da restituire: ");
                     String titoloRestituzione = scanner.nextLine();
                     myLibrary.returnBook(titoloRestituzione, utente);
                     break;
 
                 case 6:
+                    // Mostra i libri presi in prestito dall'utente
                     utente.mostraLibriPresiInPrestito();
                     break;
 
                 case 0:
+                    // Uscita dal programma
                     continua = false;
                     System.out.println("Uscita dal programma.");
                     break;
@@ -211,15 +223,4 @@ public class ProgettoBiblioteca {
      * libro
      * (solo se disponibile).
      */
-    // todo Implementare il Programma Principale per:
-    // todo Aggiungere libri
-    // todo alla biblioteca.
-    // todo Mostrare tutti
-    // todo i libri
-    // todo disponibili.
-    // todo Permettere agli
-    // todo utenti di
-    // todo prendere in
-    // todo prestito un libro.
-
 }

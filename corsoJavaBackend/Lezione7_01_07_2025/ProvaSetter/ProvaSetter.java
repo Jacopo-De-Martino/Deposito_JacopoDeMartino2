@@ -35,7 +35,7 @@ class Persona {
 
     // Metodo pubblico che utilizza il metodo privato
     public String stampaStatus() {
-        if (verificaMaggiorenne()) {
+        if (this.verificaMaggiorenne()) {
             return this.nome + " è maggiorenne.";
         } else {
             return this.nome + " non è maggiorenne.";

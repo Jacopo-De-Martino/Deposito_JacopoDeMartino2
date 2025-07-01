@@ -29,9 +29,9 @@ class Auto {
         // Validazione della marca
         // La marca non può essere vuota e non può superare i 20 caratteri
         if (marca == null || marca.isEmpty()) {
-            throw new IllegalArgumentException("La marca non può essere vuota");
+            System.out.println("La marca non può essere vuota");
         } else if (marca.length() > 20) {
-            throw new IllegalArgumentException("La marca non può superare i 20 caratteri");
+            System.out.println("La marca non può superare i 20 caratteri");
         } else {
             this.marca = marca;
         }
@@ -53,7 +53,7 @@ class Auto {
         // Validazione dell'anno
         // L'anno deve essere compreso tra 1886 (primo veicolo a motore) e 2025
         if (anno < 1886 || anno > 2025) {
-            throw new IllegalArgumentException("Anno non valido. Deve essere tra 1886 e 2025.");
+            System.out.println("Anno non valido. Deve essere tra 1886 e 2025.");
         } else {
             this.anno = anno;
         }
@@ -67,9 +67,9 @@ class Auto {
         // Validazione della targa
         // La targa non può essere vuota e non può superare i 10 caratter
         if (targa == null || targa.isEmpty()) {
-            throw new IllegalArgumentException("La targa non può essere vuota");
+            System.out.println("La targa non può essere vuota");
         } else if (targa.length() > 10) {
-            throw new IllegalArgumentException("La targa non può superare i 10 caratteri");
+            System.out.println("La targa non può superare i 10 caratteri");
         } else {
             this.targa = targa;
         }
@@ -92,7 +92,7 @@ public class AutoOfficina {
     public void aggiungiAuto(Auto auto) { // riceve un oggetto Auto come parametro
         // Validazione dell'auto
         if (auto == null) {
-            throw new IllegalArgumentException("L'auto non può essere null");
+            System.out.println("L'auto non può essere null");
         }
         autoList.add(auto);
     }
@@ -101,7 +101,7 @@ public class AutoOfficina {
     public void rimuoviAuto(Auto auto) { // riceve un oggetto Auto come parametro
         // Validazione dell'auto
         if (auto == null) {
-            throw new IllegalArgumentException("L'auto da rimuovere non può essere null");
+            System.out.println("L'auto da rimuovere non può essere null");
         }
         autoList.remove(auto);
     }

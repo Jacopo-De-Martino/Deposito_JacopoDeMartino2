@@ -83,3 +83,17 @@ x classi
 - abstract : può essere usati solo da classi astratte , il metodo non ha corpo la sotto classe è obbligata ad implementarlo
 - synchronized : metodi accessibili solo da un thread alla volta
 - volatile : il valore di un attributo non è memorizzato nella cache thread-local, ed è sempre letto dalla "memoria principale"
+
+## I modificatori di accesso o di visibilità
+
+x le classi
+
+- public : la classe è accessibile da qualsiasi altra classe
+- default : la classe è accessibile solo dalle classi nello stesso pacchetto.
+
+  x gli attributi
+
+- public : il codice è accessibile per tutte le classi
+- private : il codice è accessibile solo all'interno della classe dichiarata
+- default : il codice è accessibile solo nello stesso pacchetto. Viene usato quando non si specifica un modificatore
+- protected : il codice è accessibile nello stesso pacchetto e nelle stesse sottoclassi

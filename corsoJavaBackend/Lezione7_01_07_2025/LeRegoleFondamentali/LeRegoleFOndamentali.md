@@ -9,7 +9,7 @@ disaccoppiamento funzionale è la capacità di dividere le parti del codice in b
 Per poter raggiungere l'obbiettivo dell'incapsulamento , dobbiamo:
 
 - dichiarare variabili/attributi di classe come PRIVATE(private).
-- fornire metodi ger e set pubblici per accedere e aggiornare il valore di una private variabile.
+- fornire metodi get e set pubblici per accedere e aggiornare il valore di una private variabile.
 
 database->web->sistema->macchina
 

@@ -22,20 +22,20 @@ il termine incapsulamento nei linguaggi OOP può essere riferito a due concetti,
 
 ## Approfondimento tecnico
 
-🔍 Le due definizioni a confronto:
+Le due definizioni a confronto:
 
 ## 1. "Limitare l'accesso diretto agli elementi dell'oggetto"
 
 "Dall'esterno non puoi accedere all'oggetto"
 
-📌 Questa definizione enfatizza la protezione dei dati
+Questa definizione enfatizza la protezione dei dati
 Si riferisce all’uso dei modificatori di accesso (come private, protected, public) per nascondere gli attributi interni dell’oggetto e impedirne la modifica diretta da parte di codice esterno.
 
 È il lato restrittivo/protettivo dell’incapsulamento.
 
 Serve per impedire accessi non controllati e mantenere lo stato interno coerente.
 
-🔑 Esempio in Java:
+Esempio in Java:
 
 java
 Copia
@@ -50,14 +50,14 @@ Da fuori non puoi fare persona.nome, ma solo persona.getNome() → accesso contr
 
 "Dall'oggetto devi usare i suoi metodi per interagire con l'esterno"
 
-📌 Questa definizione enfatizza l'autonomia e il controllo interno
+Questa definizione enfatizza l'autonomia e il controllo interno
 Si riferisce al fatto che gli oggetti espongono un’interfaccia pubblica (i metodi) con cui interagire, nascondendo la logica interna.
 
 È il lato astrattivo dell’incapsulamento.
 
 Ogni oggetto decide da sé come gestire il proprio stato e come esporlo.
 
-🔑 Esempio:
+Esempio:
 Un oggetto ContoBancario non permette a chi lo usa di modificare direttamente il saldo. Invece fornisce metodi come deposita() o preleva().
 Chi usa l'oggetto non sa come il saldo viene aggiornato internamente, ma può usare i metodi per interagire correttamente.
 

@@ -99,8 +99,6 @@ public class GestoreHotel {
     /**
      * Metodo principale dell'applicazione.
      * Contiene il ciclo del menu e la gestione delle scelte.
-     * 
-     * @param args Argomenti della riga di comando (non usati in questo esempio)
      */
     public static void main(String[] args) {
         int scelta; // Variabile per memorizzare la scelta dell'utente
@@ -128,8 +126,6 @@ public class GestoreHotel {
     /**
      * Gestisce la scelta dell'utente.
      * Questo metodo contiene la logica per ogni opzione del menu.
-     * 
-     * @param scelta La scelta numerica fatta dall'utente
      */
     private static void gestisciScelta(int scelta) {
         switch (scelta) {
@@ -175,10 +171,6 @@ public class GestoreHotel {
 
     /**
      * Legge una stringa dall'input dell'utente.
-     * 
-     * @param messaggio Il messaggio da mostrare all'utente prima di leggere
-     *                  l'input.
-     * @return La stringa letta dall'utente.
      */
     public static String leggiStringa(String messaggio) {
         System.out.print(messaggio); // Mostra il messaggio all'utente
@@ -188,10 +180,6 @@ public class GestoreHotel {
     /**
      * Legge un numero intero dall'input dell'utente.
      * Gestisce gli errori se l'input non è un numero valido.
-     * 
-     * @param messaggio Il messaggio da mostrare all'utente prima di leggere
-     *                  l'input.
-     * @return L'intero letto dall'utente.
      */
     public static int leggiIntero(String messaggio) {
         System.out.print(messaggio); // Mostra il messaggio all'utente
@@ -207,10 +195,6 @@ public class GestoreHotel {
     /**
      * Legge un numero float dall'input dell'utente.
      * Gestisce gli errori se l'input non è un numero float valido.
-     * 
-     * @param messaggio Il messaggio da mostrare all'utente prima di leggere
-     *                  l'input.
-     * @return Il float letto dall'utente.
      */
     public static float leggiFloat(String messaggio) {
         System.out.print(messaggio);

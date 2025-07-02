@@ -13,6 +13,10 @@ Per poter raggiungere l'obbiettivo dell'incapsulamento , dobbiamo:
 
 database->web->sistema->macchina
 
+Isolomento
+Oscuramente
+disaccoppiamento funzionale
+
 ## Incampsulamento
 
 il termine incapsulamento nei linguaggi OOP può essere riferito a due concetti, distinti ma collecati tra loro:
@@ -37,9 +41,6 @@ Serve per impedire accessi non controllati e mantenere lo stato interno coerente
 
 Esempio in Java:
 
-java
-Copia
-Modifica
 class Persona {
 private String nome; // non accessibile dall’esterno
 

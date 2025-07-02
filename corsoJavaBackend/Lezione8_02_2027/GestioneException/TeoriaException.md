@@ -35,7 +35,73 @@ try(Scanner scanner = new Scanner(System.in)){
 //Blocco eseguito se nel blocco del try in run time qualcosa va storto
 }finally{
 //Blocco per chiudere risorse in questo caso lo gestisce il try,
+}
 
+## La gerarchia delle exception in Java
+
+            <---Error
+
+Throwable(lanciabile)<---
+
+             <---Exception(Gestione anomalie checked,compilatore compilazione(CHECKED) ) <--- RuntimeException(Gestione anomalie unchecked --dopo il controllo del compilatore compilazione in run-time(UNCHECKED))
+
+## Clausole
+
+## Throws -->
+
+una clausola che viene utilizzata in un metodo, un metodo può dichiarare nella sua firma che può lanciare un'eccezione attraverso questa clausola
+
+## Sintassi
+
+public void metodo1(String s, int i) throws Exception
+public void metodo2(String s, int i) throws RuntimeException
+
+## throw -->
+
+con la clausola throw decidiamo di lanciare esplictamente un'eccezione di tipo checked,
+
+## Sintassi
+
+throw obj
+
+## Sintassi completa checked obbligatorio utilizzo try catch
+
+public int divisione(int x,int y) throws Exception{
+int z = 0;
+if(y == 0){
+throw new Exception();
+}
+return z = x/y;
+}
+
+## Sintassi completa unchecked non utilizzo try catch
+
+public int divisione(int x,int y) throws RuntimeException{
+int z =0;
+if(y == 0){
+throw new RuntimeException();
+}
+return z = x/y;
+}
+
+## i catch multipli
+
+possiamo usare più catch per un singolo blocco try specializzando blocchi di codice a seconda del catch che scatta.
+il catch per l'exception più generico deve essere 'ultimo(catch(Exception x))
+il più specifico il primo
+
+## I catch possono avere stessi comportmaneti per 1 o più exception utilizzando il "|"
+
+## Le Exception custom è una best practice quando vogliamo gestire delle exception personali
+
+Creazioni classe figlie che extends Exceptio.
+
+## Sintassi
+
+public class NomeMiaException(Nome parlante) extends Exception{
+public CustomChekedException(String message, Throwable cause){
+super(message,cause);
+}
 }
 
 //Struttura JAVA

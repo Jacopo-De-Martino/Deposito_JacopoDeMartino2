@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class EsempioEccezioni3 {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {// Chiude automaticamente una risorsa che ha un metodo clos a
-                                                        // l'esecuzione del blocco
+        try (Scanner scanner = new Scanner(System.in)) {// Chiude automaticamente una risorsa che ha un metodo close
+                                                        // terminata l'esecuzione del blocco
             System.out.println("Inserisci un numero");
             int input = scanner.nextInt();
             System.out.println("Inserito " + input);

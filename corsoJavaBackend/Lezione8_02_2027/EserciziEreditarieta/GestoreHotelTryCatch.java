@@ -7,24 +7,24 @@ import java.util.Scanner; // Importa la classe Scanner per leggere l'input dell'
 class Camera {
     protected int nCamera; // identificativo camera
     protected float prezzo; // prezzo
-
     // Costruttore della classe Camera
+
     public Camera(int nCamerai, float prezzoi) {
         this.nCamera = nCamerai;
         this.prezzo = prezzoi;
     }
 
-    // Metodo per stampare le informazioni di base della camera
+    // Metodo per stampare le informazioni di base della camera (senza prezzo)
     public void info() {
-        System.out.println("Camera : " + nCamera + " Prezzo : " + prezzo + "€");
+        System.out.println("Camera : " + nCamera);
     }
 
-    // Metodo info sovraccaricato (overload)
+    // Metodo info sovraccaricato (overload) e sovrascritto nella sottoclasse
     public void info(boolean mostraPrezzo) {
         if (mostraPrezzo) {
-            this.info(); // Chiama il metodo info() senza parametri
+            System.out.println("Camera : " + nCamera + " Prezzo : " + prezzo + "Euro");
         } else {
-            System.out.println("Camera : " + nCamera);
+            this.info(); // Calls info() without parameters, which prints "Camera : nCamera"
         }
     }
 }
@@ -32,17 +32,28 @@ class Camera {
 // Classe figlia di Camera: Suite
 class Suite extends Camera {
     private String serviziExtra; // attributo privato proprietario della classe Suite
-
     // Costruttore della classe Suite
+
     public Suite(int nCamerai, float prezzoi, String serviziExtrai) {
         super(nCamerai, prezzoi); // Chiama il costruttore della classe padre Camera
         this.serviziExtra = serviziExtrai;
     }
 
-    // Metodo info sovrascritto (override) per le Suite
+    // Metodo info sovrascritto (override) per le Suite (senza prezzo)
     @Override
     public void info() {
-        System.out.println("Suite : " + nCamera + " Prezzo : " + prezzo + "€" + " Servizi extra : " + serviziExtra);
+        System.out.println("Suite : " + nCamera + " Servizi extra : " + serviziExtra);
+    }
+
+    @Override
+    public void info(boolean mostraPrezzo) {
+        if (mostraPrezzo) {
+            System.out.println(
+                    "Suite : " + nCamera + " Prezzo : " + prezzo + "Euro" + " Servizi extra : " + serviziExtra);
+        } else {
+            this.info(); // Calls info() without parameters, which prints "Suite : nCamera Servizi extra
+                         // : serviziExtra"
+        }
     }
 }
 
@@ -52,6 +63,7 @@ class Hotel {
     private ArrayList<Camera> listaCamere; // Lista di tutte le camere (Camera e Suite)
     private int contatoreSuite = 0; // Contatore per le suite
     private int contatoreCamereStandard = 0; // Contatore per le camere standard
+    private Scanner scanner = new Scanner(System.in);
 
     // Costruttore della classe Hotel
     public Hotel(String nome) {
@@ -72,13 +84,24 @@ class Hotel {
 
     // Metodo per stampare le informazioni di tutte le camere e i totali
     public void stampaInformazioniHotel() {
+        System.out.println("Vuoi sapere il prezzo? 'si' o 'no'");
+        boolean prezzo = false;
+        String scelta = scanner.nextLine();
+        if (scelta.equalsIgnoreCase("si")) {
+            prezzo = true;
+        }
+
         System.out.println("\n--- Informazioni Hotel: " + nome + " ---");
         if (listaCamere.isEmpty()) {
             System.out.println("Nessuna camera presente in questo hotel.");
         } else {
             System.out.println("Dettagli delle camere:");
             for (Camera c : listaCamere) {
-                c.info(); // Utilizza il polimorfismo per chiamare il metodo info() corretto
+                if (prezzo) {
+                    c.info(prezzo);
+                } else {
+                    c.info(); // Utilizza il polimorfismo per chiamare il metodo info() corretto
+                }
             }
         }
         System.out.println("\nTotale Suite: " + contatoreSuite);
@@ -89,8 +112,7 @@ class Hotel {
 }
 
 // Classe principale per la gestione dell'hotel
-public class GestoreHotel {
-
+public class GestoreHotelTryCatch {
     // Scanner per la lettura dell'input da console
     private static final Scanner scanner = new Scanner(System.in);
     // Istanza dell'Hotel che verrà gestito dall'applicazione
@@ -130,13 +152,25 @@ public class GestoreHotel {
     private static void gestisciScelta(int scelta) {
         switch (scelta) {
             case 1:
-                aggiungiCameraStandard(); // Chiama il metodo per aggiungere una camera standard
+                try {
+                    aggiungiCameraStandard(); // Chiama il metodo per aggiungere una camera standard
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 break;
             case 2:
-                aggiungiSuite(); // Chiama il metodo per aggiungere una suite
+                try {
+                    aggiungiSuite(); // Chiama il metodo per aggiungere una suite
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 break;
             case 3:
-                hotel.stampaInformazioniHotel(); // Chiama il metodo dell'hotel per stampare le info
+                try {
+                    hotel.stampaInformazioniHotel(); // Chiama il metodo dell'hotel per stampare le info
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 break;
             case 0:
                 // L'uscita è gestita dal ciclo do-while nel main

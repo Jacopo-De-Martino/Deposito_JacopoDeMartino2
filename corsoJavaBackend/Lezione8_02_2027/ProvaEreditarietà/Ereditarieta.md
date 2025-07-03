@@ -10,7 +10,7 @@ La classe "figlia" è chiamata "classe derivata".
 
 La classe "padre" è chiamata "classe base" (o "superclasse").
 
-Ruolo della Classe Base: La classe base contiene il codice comune a tutte le classi che da essa derivano.
+Ruolo della Super Classe: La Super Classe contiene il codice comune a tutte le classi che da essa derivano.
 
 Ruolo della Classe Derivata: Ogni classe derivata rappresenta una specializzazione della superclasse, ma eredita in ogni caso dalla classe base i comportamenti in essa definiti.
 

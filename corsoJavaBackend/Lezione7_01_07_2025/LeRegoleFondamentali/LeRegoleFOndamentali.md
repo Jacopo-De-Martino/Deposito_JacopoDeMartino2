@@ -13,6 +13,7 @@ Per poter raggiungere l'obbiettivo dell'incapsulamento , dobbiamo:
 
 database->web->sistema->macchina
 
+dati sensibili
 Isolomento
 Oscuramente
 disaccoppiamento funzionale

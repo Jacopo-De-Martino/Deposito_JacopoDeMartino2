@@ -42,15 +42,16 @@ class Furgone extends VeicoloConsegna implements Tracciabile {
         super(targa, caricoMassimo);
     }
 
-    @Override
+    @Override // Specializzo il metodo dell'interfaccia tracciabile
     public void tracciaConsegna() {
-        consegnaPacco();
+        this.consegnaPacco();// richiamo al suo interno il metodo della classe padre consegnaPacco
+        // specializzato nella classe furgone
         System.out.println("Impossibile tracciare la consegna");
     }
 
     @Override
-    public void consegnaPacco() {
-        System.out.println("Furgone : \n sta consegnando via strada " + targa + "Destinazione : "
+    public void consegnaPacco() {// Metodo specializzato per classe furgone
+        System.out.println("Furgone " + targa + " : \nsta consegnando via strada " + "Destinazione : "
                 + (destinazione != null
                         ? destinazione
                         : "Destinazione non specificata"));
@@ -64,7 +65,7 @@ class Drone extends VeicoloConsegna implements Tracciabile {
 
     @Override
     public void tracciaConsegna() {
-        consegnaPacco();
+        this.consegnaPacco();
         System.out.println("Consegna in arrivo tra " + Math.floor(Math.random() * 10 + 1) + "minuti");
     }
 
@@ -72,7 +73,6 @@ class Drone extends VeicoloConsegna implements Tracciabile {
     public void consegnaPacco() {
         System.out.println("Drone sta volando verso destinazione : " + (destinazione != null ? destinazione
                 : "Destinazione non specificata"));
-        tracciaConsegna();
     }
 }
 
@@ -97,12 +97,14 @@ public class ConsegnaManager {
             }
 
             switch (scelta) {
-                case "1":
-                    System.out.print("Che veicolo vuoi inserire ('DRONE' o 'FURGONE')? ");
+                case "1":// inserimento dei veicoli nell'ArrayList veicoliConsegne
+                    System.out.print("Che veicolo vuoi inserire ('DRONE' o 'FURGONE')? ");// Controllo che tipo di
+                                                                                          // Instanza a richiesta
+                                                                                          // 'Drone' o 'Furgone'
                     String tipoVeicolo = scanner.nextLine().toLowerCase();
                     VeicoloConsegna nuovoVeicolo;
 
-                    if (tipoVeicolo.equals("drone")) {
+                    if (tipoVeicolo.equals("drone")) {// A seconda della scelta faccio inserire i dati per il drone
                         System.out.print("Inserisci codice identificativo drone: ");
                         String cdDrone = scanner.nextLine();
                         System.out.print("Inserisci carico massimo (in kg): ");
@@ -111,7 +113,8 @@ public class ConsegnaManager {
                         nuovoVeicolo = new Drone(cdDrone, kgDrone);
                         veicoliConsegne.add(nuovoVeicolo);
                         System.out.println("Drone aggiunto!");
-                    } else if (tipoVeicolo.equals("furgone")) {
+                    } else if (tipoVeicolo.equals("furgone")) {// A seconda della scelta faccio inserire i dati per il
+                                                               // furgone
                         System.out.print("Inserisci targa: ");
                         String trFurgone = scanner.nextLine();
                         System.out.print("Inserisci carico massimo (in kg): ");

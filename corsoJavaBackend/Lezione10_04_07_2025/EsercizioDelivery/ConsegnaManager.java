@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione9_04_07_2025.EsercizioDelivery;
+package corsoJavaBackend.Lezione10_04_07_2025.EsercizioDelivery;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -124,13 +124,14 @@ public class ConsegnaManager {
                         veicoliConsegne.add(nuovoVeicolo);
                         System.out.println("Furgone aggiunto!");
                     } else {
-                        System.out.println("Tipo di veicolo non valido.");
+                        System.out.println("Tipo di veicolo non valido.");// messaggio di 'errore'
                     }
-                    System.out.println("Lista veicoli attuale: " + veicoliConsegne);
+                    System.out.println("Lista veicoli attuale: " + veicoliConsegne);// Stampo la lista
                     break;
 
                 case "2": // Richiedi consegna
-                    if (veicoliConsegne.isEmpty()) {
+                    if (veicoliConsegne.isEmpty()) {// Controllo che la lista non sia vuota prima di richiedere una
+                                                    // consegna
                         System.out.println("Nessun veicolo disponibile. Aggiungine uno prima.");
                         break;
                     }

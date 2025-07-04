@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione9_04_07_2025.ProvaInterfacceAstrazione;
+package corsoJavaBackend.Lezione10_04_07_2025.ProvaInterfacceAstrazione;
 
 //Interfaccia Animale
 interface Animale {

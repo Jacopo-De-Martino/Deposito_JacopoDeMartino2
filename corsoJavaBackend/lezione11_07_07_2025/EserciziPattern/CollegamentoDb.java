@@ -23,26 +23,28 @@ class DatabaseManager {// Classe DatabaseManager Singleton per effettuare coness
     }
 
     public void connect() {
-        if (instance != null) {
-            System.out.println("Connessione stabilita. Connessioni attive : " + connectionCount);
-        }
+        System.out.println("Connessione stabilita. Connessioni attive : " + connectionCount);
     }
 
     public void selectUser() {
+        if (connectionCount == 0) { // O connectionCount == 0, usando il tuo nome originale
+            System.out.println("Errore: Nessuna connessione attiva. Connettiti al DB prima di selezionare utenti.");
+            return; // Esci dal metodo se non ci sono connessioni
+        }
         // Simulazione dei dati come array bidimensionale: [ID, Nome]
-        if (instance != null) {
-            String[][] users = {
-                    { "1", "Alice" },
-                    { "2", "Bob" },
-                    { "3", "Charlie" },
-                    { "4", "Diana" }
-            };
 
-            // Visualizzazione dei dati
-            System.out.println("Lista utenti dal 'database':");
-            for (int i = 0; i < users.length; i++) {
-                System.out.println("ID: " + users[i][0] + ", Nome: " + users[i][1]);
-            }
+        String[][] users = {
+                { "1", "Alice" },
+                { "2", "Bob" },
+                { "3", "Charlie" },
+                { "4", "Diana" }
+        };
+
+        // Visualizzazione dei dati
+        System.out.println("Lista utenti dal 'database':");
+        for (int i = 0; i < users.length; i++) {
+            System.out.println("ID: " + users[i][0] + ", Nome: " + users[i][1]);
+
         }
     }
 

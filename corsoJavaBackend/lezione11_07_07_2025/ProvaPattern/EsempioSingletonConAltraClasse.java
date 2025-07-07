@@ -30,7 +30,6 @@ class Fattoria {
 // La classe Pippo è il nostro Singleton
 class Pippo {
     private static Pippo instance;
-
     private String nome;
     private int eta;
     // NUOVO: Riferimento a un'istanza di Fattoria

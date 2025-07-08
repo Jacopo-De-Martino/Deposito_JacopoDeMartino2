@@ -30,11 +30,11 @@ Questo volume è stato scritto da quattro autori d'eccezione – Erich Gamma, Ri
 
 La loro opera ha rappresentato un punto di svolta. La GoF ha svolto un lavoro pionieristico, raccogliendo e codificando le migliori pratiche e le soluzioni architetturali più efficaci che erano emerse spontaneamente nelle comunità di sviluppatori che lavoravano con linguaggi orientati agli oggetti come C++ e Smalltalk.
 
-Hanno fornito la prima tassonomia strutturata di questi schemi, catalogando 23 pattern distinti e suddividendoli in tre categorie principali:
+## Hanno fornito la prima tassonomia strutturata di questi schemi, catalogando 23 pattern distinti e suddividendoli in tre categorie principali:
 
 - Pattern Creazionali: Si occupano della creazione di oggetti, nascondendo la logica di instanziazione e rendendo il sistema indipendente da come gli oggetti vengono creati, composti e rappresentati.
 
-## In sintesi (Creazionali) : come creo gli oggetti?
+## In sintesi (Creazionali) : come e dove creo gli oggetti?
 
 - Singleton
 - Factory Method
@@ -42,9 +42,11 @@ Hanno fornito la prima tassonomia strutturata di questi schemi, catalogando 23 p
 - Builder
 - Prototype
 
+---
+
 - Pattern Strutturali: Riguardano la composizione di classi e oggetti, per formare strutture più grandi e complesse, mantenendo le strutture flessibili ed efficienti.
 
-## In sintesi (Strutturali) : come li lego insieme?
+## In sintesi (Strutturali) : come e dove li lego insieme?
 
 - Adapter
 - Decorrator
@@ -54,9 +56,11 @@ Hanno fornito la prima tassonomia strutturata di questi schemi, catalogando 23 p
 - Bridge
 - Flyweight
 
+---
+
 - Pattern Comportamentali: Descrivono come le classi e gli oggetti interagiscono e distribuiscono le responsabilità. Si concentrano sulla comunicazione e l'algoritmo tra gli oggetti.
 
-## In sintesi (Comportamentali) : come interagiscono tra loro, comunicano e collaborano??
+## In sintesi (Comportamentali) : per mezzo di chi/cosa e come interagiscono tra loro, comunicano e collaborano??
 
 - Observer
 - Strategy

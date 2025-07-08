@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione12_08_07_2025.Esericizi.EsercizioFacile;
+package corsoJavaBackend.lezione12_08_07_2025.EsericiziObserver.EsercizioFacile;
 
 public class MainNotificheStazioneMeteo {
     public static void main(String[] args) {

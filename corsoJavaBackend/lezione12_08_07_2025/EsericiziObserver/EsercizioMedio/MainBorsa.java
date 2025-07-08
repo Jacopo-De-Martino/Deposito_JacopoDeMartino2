@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione12_08_07_2025.Esericizi.EsercizioMedio;
+package corsoJavaBackend.lezione12_08_07_2025.EsericiziObserver.EsercizioMedio;
 
 public class MainBorsa {
     public static void main(String[] args) {

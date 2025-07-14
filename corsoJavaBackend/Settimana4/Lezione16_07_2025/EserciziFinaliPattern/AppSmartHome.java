@@ -138,7 +138,7 @@ public class AppSmartHome {
         centralina.addObserver(luce);
         centralina.addObserver(allarmeAdattato);
 
-        // Simulo eventi nella smart home
+        // Simulo eventi nella smart home tramite sensori
         centralina.evento("Movimento rilevato in soggiorno");
         centralina.evento("Luce accesa in cucina");
         centralina.evento("Allarme attivato");

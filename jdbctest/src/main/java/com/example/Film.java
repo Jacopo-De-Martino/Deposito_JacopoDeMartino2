@@ -14,7 +14,7 @@ public class Film {
         // Parametri di connessione al database MySQL
         String url = "jdbc:mysql://localhost:3306/sakila"; // URL di connessione al database (DBMS:MySQL,
                                                            // host:localhost, porta:3306, nomeDB:sakila)
-        String user = "root"; // Nome utente del database
+        String user = ""; // Nome utente del database
         String password = ""; // Password dell'utente del database
 
         // Blocco try-with-resources per gestire automaticamente la chiusura di

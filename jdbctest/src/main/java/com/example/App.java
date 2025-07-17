@@ -9,7 +9,7 @@ import java.sql.*;
 public class App {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/sakila"; // (jdbc:rdbms)jdbc:mysql://(port)localhost:3306/nomedatabase
-        String user = "root"; // utente del DB
+        String user = ""; // utente del DB
         String password = ""; // password del DB
         // try catch per testare la connessione col db
         // Classe Conn rappresenta la conessione e viene valorizzata da

@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione14_09_2025.EserciziFactoryMethod.EsercizioFactoryMehodMedio;
+package corsoJavaBackend.Settimana3.Lezione14_10_2025.EserciziFactoryMethod.EsercizioFactoryMehodMedio;
 // --- PATTERN DECORATOR: Implementazione dei Decoratori per i Colori ---
 
 // Decoratore astratto Estende Forma e mantiene un riferimento al Componente Concreto

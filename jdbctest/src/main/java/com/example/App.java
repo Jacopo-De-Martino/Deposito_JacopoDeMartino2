@@ -1,8 +1,6 @@
 package com.example;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * Hello world!
@@ -14,11 +12,22 @@ public class App {
         String user = "root"; // utente del DB
         String password = "root"; // password del DB
 
-        try (Connection conn = DriverManager.getConnection(url, user, password)) {
-            System.out.println("Connessione riuscita");
+        try (Connection conn = DriverManager.getConnection(url, user, password);
+
+                Statement stmt = conn.createStatement();
+
+                ResultSet rs = stmt.executeQuery("SELECT title FROM film LIMIT 5")) {
+
+            while (rs.next()) {
+
+                System.out.println("Film: " + rs.getString("title"));
+
+            }
+
         } catch (SQLException e) {
-            System.out.println("Errore nella connessione");
+
             e.printStackTrace();
+
         }
     }
 }

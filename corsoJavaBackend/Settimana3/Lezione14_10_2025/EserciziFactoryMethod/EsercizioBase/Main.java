@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione14_09_2025.EserciziFactoryMethod.EsercizioBase;
+package corsoJavaBackend.Settimana3.Lezione14_10_2025.EserciziFactoryMethod.EsercizioBase;
 
 // Main
 import java.util.Scanner;

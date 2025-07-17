@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione12_08_07_2025.EserciziDecorator;
+package corsoJavaBackend.Settimana3.lezione12_08_07_2025.EserciziDecorator;
 
 public class MainDecoratoreMaiuscolo {
     public static void main(String[] args) {

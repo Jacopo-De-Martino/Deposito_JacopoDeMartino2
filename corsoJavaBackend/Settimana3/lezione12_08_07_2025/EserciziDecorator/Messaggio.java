@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione12_08_07_2025.EserciziDecorator;
+package corsoJavaBackend.Settimana3.lezione12_08_07_2025.EserciziDecorator;
 
 //Interfaccia/ Tipo funzionale che ci permette di lavorarare su oggetti a livello paritario distacco da : /principio di ereditarietà legame stretto/
 interface Messaggio {

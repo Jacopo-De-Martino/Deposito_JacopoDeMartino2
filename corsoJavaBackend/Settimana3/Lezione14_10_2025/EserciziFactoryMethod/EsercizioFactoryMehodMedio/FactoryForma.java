@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione14_09_2025.EserciziFactoryMethod.EsercizioFactoryMehodMedio;
+package corsoJavaBackend.Settimana3.Lezione14_10_2025.EserciziFactoryMethod.EsercizioFactoryMehodMedio;
 
 // --- Pattern Factory Method  ---
 //Classe astratta che utilizzare il metodo crea Forma per instanziare gli oggetti che implementano l'interfaccia Forma

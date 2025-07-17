@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione12_08_07_2025.EsericiziObserver.EsercizioFacile;
+package corsoJavaBackend.Settimana3.lezione12_08_07_2025.EsericiziObserver.EsercizioFacile;
 
 import java.util.ArrayList;
 import java.util.List;

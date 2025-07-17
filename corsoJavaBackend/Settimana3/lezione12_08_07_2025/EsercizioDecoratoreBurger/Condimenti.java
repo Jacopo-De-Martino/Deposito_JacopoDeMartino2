@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione12_08_07_2025.EsercizioDecoratoreBurger;
+package corsoJavaBackend.Settimana3.lezione12_08_07_2025.EsercizioDecoratoreBurger;
 
 // Classe astratta Decorator
 abstract class HamburgerDecorator implements Hamburger {

@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione14_09_2025.EserciziFactoryMethod.EsercizioMedioFacade;
+package corsoJavaBackend.Settimana3.Lezione14_10_2025.EserciziFactoryMethod.EsercizioMedioFacade;
 
 /**
  * Interfaccia che definisce le fasi generiche di avvio per qualsiasi componente

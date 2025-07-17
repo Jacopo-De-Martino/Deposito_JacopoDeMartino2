@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione14_09_2025.EserciziFactoryMethod.EsercizioFactoryMehodMedio;
+package corsoJavaBackend.Settimana3.Lezione14_10_2025.EserciziFactoryMethod.EsercizioFactoryMehodMedio;
 
 // --- PATTERN FACADE (aggiornato per usare i Decoratori e Factory Method) ---
 class DisegnatoreFacciata {

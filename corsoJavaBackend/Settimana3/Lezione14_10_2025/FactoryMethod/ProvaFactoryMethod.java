@@ -1,4 +1,4 @@
-package corsoJavaBackend.Lezione14_09_2025.FactoryMethod;
+package corsoJavaBackend.Settimana3.Lezione14_10_2025.FactoryMethod;
 
 // 1. Product: definisce l'interfaccia del prodotto
 interface Product {

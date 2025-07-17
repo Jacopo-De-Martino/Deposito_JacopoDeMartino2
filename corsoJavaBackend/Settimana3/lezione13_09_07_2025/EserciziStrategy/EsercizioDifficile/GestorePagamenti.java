@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione13_09_07_2025.EserciziStrategy.EsercizioDifficile;
+package corsoJavaBackend.Settimana3.lezione13_09_07_2025.EserciziStrategy.EsercizioDifficile;
 
 public class GestorePagamenti {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione11_07_07_2025.ProvaPattern;
+package corsoJavaBackend.Settimana3.lezione11_07_07_2025.ProvaPattern;
 
 // La classe Fattoria, che sarà utilizzata dal nostro Singleton Pippo
 class Fattoria {

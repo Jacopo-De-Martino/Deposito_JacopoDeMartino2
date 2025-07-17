@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione12_08_07_2025.EsericiziObserver.EsercizioMedio;
+package corsoJavaBackend.Settimana3.lezione12_08_07_2025.EsericiziObserver.EsercizioMedio;
 
 // Investitori sono gli Observer
 interface Investitore { // Interfaccia

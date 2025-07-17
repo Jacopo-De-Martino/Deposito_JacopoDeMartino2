@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione13_09_07_2025.Facade;
+package corsoJavaBackend.Settimana3.lezione13_09_07_2025.Facade;
 
 // Sottosistema
 class SubsystemA {

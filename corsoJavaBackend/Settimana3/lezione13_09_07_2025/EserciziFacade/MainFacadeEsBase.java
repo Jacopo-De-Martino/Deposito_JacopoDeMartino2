@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione13_09_07_2025.EserciziFacade;
+package corsoJavaBackend.Settimana3.lezione13_09_07_2025.EserciziFacade;
 
 class AccendiLuceA {// Sottosistema A
     void accendiLuceA() {

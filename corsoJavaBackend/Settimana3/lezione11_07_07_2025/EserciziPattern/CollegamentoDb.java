@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione11_07_07_2025.EserciziPattern;
+package corsoJavaBackend.Settimana3.lezione11_07_07_2025.EserciziPattern;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package corsoJavaBackend.Settimana3.Lezione14_09_2025.EserciziAdapter;
+package corsoJavaBackend.Settimana3.Lezione14_10_2025.EserciziAdapter;
 
 public class MainSockedAdapter {
     // Classe principale per testare l'adapter tra prese americane ed europee

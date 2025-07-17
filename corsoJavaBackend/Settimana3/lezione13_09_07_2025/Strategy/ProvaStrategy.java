@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione13_09_07_2025.Strategy;
+package corsoJavaBackend.Settimana3.lezione13_09_07_2025.Strategy;
 
 interface Strategy {
     void execute();

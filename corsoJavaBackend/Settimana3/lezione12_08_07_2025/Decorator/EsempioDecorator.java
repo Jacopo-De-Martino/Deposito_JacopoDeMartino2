@@ -1,3 +1,4 @@
+
 // File: Component.java
 // 1. Interfaccia Componente: Definisce il comportamento comune per l'oggetto base e i decoratori.
 interface Component {

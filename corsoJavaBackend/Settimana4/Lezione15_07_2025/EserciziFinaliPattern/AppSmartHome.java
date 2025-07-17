@@ -1,4 +1,4 @@
-package corsoJavaBackend.Settimana4.Lezione16_07_2025.EserciziFinaliPattern;
+package corsoJavaBackend.Settimana4.Lezione15_07_2025.EserciziFinaliPattern;
 
 import java.util.ArrayList;
 import java.util.List;

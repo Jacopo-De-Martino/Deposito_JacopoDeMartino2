@@ -1,4 +1,4 @@
-package corsoJavaBackend.lezione13_09_07_2025.EserciziStrategy.EsercizioFacile;
+package corsoJavaBackend.Settimana3.lezione13_09_07_2025.EserciziStrategy.EsercizioFacile;
 
 class Operazione_Moltiplicazione implements Operazione {
 
